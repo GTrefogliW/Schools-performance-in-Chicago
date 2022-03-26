@@ -7,13 +7,10 @@ library(RColorBrewer)
 library(shiny)
 library(plotly)
 
-
-# Question 2
-path <- "C:/Users/guill/OneDrive/Documents/Data and Programming II/HW2/Boundaries - ZIP Codes"
-chi_shape <- st_read(file.path(path, "geo_export_fbe7a12f-9b8f-4ed9-b1eb-9b5cc7027af5.shp"))
+#path <- "C:/Users/guill/OneDrive/Documents/Data and Programming II/HW2/Boundaries - ZIP Codes"
+#chi_shape <- st_read(file.path(path, "geo_export_fbe7a12f-9b8f-4ed9-b1eb-9b5cc7027af5.shp"))
 
 # choropleths for dataset 1 - Education
-
 df_educ <- read_csv("Chicago_Public_Schools_-_Progress_Report_Cards__2011-2012_.csv")
 # Merge
 df_educ$`ZIP Code` <- as.character(df_educ$`ZIP Code`)
@@ -52,4 +49,3 @@ map_programs
 # of this fact, Plot 2 shows that the participation in the educational program run in 
 # the Summer of 2011 by The Chicago Public Library was the lowest for neighborhoods located
 # in that part of the city.
-

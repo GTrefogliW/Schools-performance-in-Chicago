@@ -1,6 +1,3 @@
-#  https://guillermotrefogli.shinyapps.io/Shiny_hw2/
-
-
 library(tidyverse)
 library(sf)
 library(tidyverse)
@@ -10,7 +7,7 @@ library(scales)
 library(RColorBrewer)
 library(shiny)
 library(plotly)
-# Question 3
+
 setwd("C:/Users/guill/OneDrive/Documents/Data and Programming II/HW2")
 df_educ_chi <- read_csv("educ_shi.csv")
 zip_list <- df_educ_chi$`ZIP Code`
